@@ -1,0 +1,31 @@
+#login{
+    color:red;
+    margin: 2px;
+}
+body{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+#formulaire{
+    border: solid 1px green;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 95px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+}
+#formulaire input{
+    display: block;
+    margin-bottom: 20px;
+    
+
+}
+#formulaire button{
+    background-color: green;
+    padding-left: 75px;
+    padding-right: 75px;
+
+}
