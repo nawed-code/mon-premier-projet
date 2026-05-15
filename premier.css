@@ -1,14 +1,13 @@
-#login{
-    color:red;
-    margin: 2px;
+.contenaire{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-body{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
+.box{
+    flex: 1 1 300px;
+    margin: 10px;
 }
+
 #formulaire{
     border: solid 1px green;
     padding-top: 50px;
@@ -29,3 +28,43 @@ body{
     padding-right: 75px;
 
 }
+img{
+    width: 300px;
+    height: 280px;
+}
+@media screen and (max-width:750px) {
+    .contenaire{
+        
+        font-family: 'Times New Roman', Times, sans-serif;
+
+    }
+    img{
+        width: 150px;
+        height: 190px;
+    }
+    
+}
+@media screen and (max-width:350px){
+    .contenaire{
+       
+        font-size: small;
+        padding: 0px;
+        margin: 0px;
+       
+    }
+    #formulaire{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #lamp{
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    img{
+        width: 100px;
+        height: 130px;
+    }
+}
+
