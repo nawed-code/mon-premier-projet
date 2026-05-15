@@ -1,26 +1,34 @@
 .contenaire{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    padding: 100px 150px;
 }
 .box{
-    flex: 1 1 300px;
+    flex: 0.5 1 250px;
     margin: 10px;
 }
 
 #formulaire{
     border: solid 1px green;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 95px;
-    padding-bottom: 50px;
+    padding: 50px 55px 50px 90px;
     border-radius: 8px;
+    width: 250px;
+    box-shadow: 1px 1px;
 }
 #formulaire input{
     display: block;
     margin-bottom: 20px;
     
 
+}
+a{
+    display: block;
+    color: black;
+    font-size: small;
+    margin-top: 20px;
+    padding-left: 35px;
+    padding-right: 20px;
+    text-decoration : none;
 }
 #formulaire button{
     background-color: green;
@@ -46,7 +54,6 @@ img{
 }
 @media screen and (max-width:350px){
     .contenaire{
-       
         font-size: small;
         padding: 0px;
         margin: 0px;
@@ -57,11 +64,7 @@ img{
         padding: 0px;
         margin: 0px;
     }
-    #lamp{
-        padding: 0px;
-        margin: 0px;
-        
-    }
+   
     img{
         width: 100px;
         height: 130px;
