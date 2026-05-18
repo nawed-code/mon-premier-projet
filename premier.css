@@ -9,17 +9,18 @@
 }
 
 #formulaire{
-    border: solid 1px green;
+    border: solid 2px rgb(9, 0, 128);
     padding: 50px 55px 50px 90px;
     border-radius: 8px;
     width: 250px;
-    box-shadow: 1px 1px;
+    box-shadow: 1px 2px red;
 }
 #formulaire input{
     display: block;
     margin-bottom: 20px;
-    
-
+}
+#formulaire h3{
+    box-shadow: 0.5px red;
 }
 a{
     display: block;
@@ -31,7 +32,7 @@ a{
     text-decoration : none;
 }
 #formulaire button{
-    background-color: green;
+    
     padding-left: 75px;
     padding-right: 75px;
 
@@ -44,7 +45,6 @@ img{
 }
 @media screen and (max-width:750px) {
     .contenaire{
-        
         font-family: 'Times New Roman', Times, sans-serif;
 
     }
