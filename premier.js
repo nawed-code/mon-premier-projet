@@ -1,7 +1,8 @@
 "use strict"
+/*
 console.log("hi consol");
 let formulaire = document.getElementById("formulaire");
-formulaire.style.display="none";
+//formulaire.style.display="none";
 document.getElementById("formulaire").addEventListener("submit",Depart);
 function Depart(event){
     event.preventDefault();
@@ -47,3 +48,4 @@ function Allumer(event){
     }
 
 }
+    */
