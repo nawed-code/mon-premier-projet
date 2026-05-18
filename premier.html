@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="premier.css">
+    <script src="premier.js" defer></script>
   </head>
   <body>
     <div class="contenaire">
       <nav class="box" id="login">
         
         <form action="#" method="post" id="formulaire"> 
-          <h3>WELLCOME BACK</h3>
-          <input type="text" name="username" placeholder="enter your username">
-          <input type="password" name ="password" placeholder="enter your password">
+          <h3>WELCOME BACK</h3>
+          <input type="text" id="username" name="username" placeholder="Username/email" value="">
+          <input type="password" id="password" name="password" placeholder="Password" value="">
           <button type="submit">Login</button>
-          <a href="exemple.com">Forget your password ?</a>
-              
+          <a href="exemple.com">Forgot your password ?</a>
+          <span id="error"></span>
         </form>
       </nav>
       <aside class="box" id="lamp">
-        <img src="image/lamp_etteint.jpeg" alt="lamp_etteint" >
+        <img src="image/1.jpeg" alt="lamp_etteint" id="image">
+        <button id="button">On/Off</button>
       </aside>
     </div>
     
-   
-    
   </body>
+
 </html>
