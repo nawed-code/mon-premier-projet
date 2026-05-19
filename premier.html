@@ -9,33 +9,37 @@
   </head>
   <body>
     <div class="contenaire">
-      <nav class="box" id="login">
+      <section class="box" >
         
-        <form action="#" method="post" class="formulaire"> 
-          <h3>WELCOME BACK</h3>
+        <form action="#" method="post" class="formulaire" id="login"> 
+          <h3> WELCOME BACK</h3>
           <input type="text" id="username" name="username" placeholder="Username/email" value="">
+          
           <input type="password" id="password" name="password" placeholder="Password" value="">
+          <span id="errorLogin"></span>
           <button type="submit">Login</button>
           <a href="exemple.com">Forgot your password ?</a>
-          <span id="error"></span>
+          <a href="#newaccount" id="creat"> Creat a new account ?</a>
+          
         </form>
-      </nav>
-      <nav class="box" id="lamp">
+      </section>
+      <section class="box" id="lamp">
         <img src="image/1.jpeg" alt="lamp_etteint" id="image">
         
-      </nav>
-      <nav class="box" >
-        <form action="#" method="post" class="formulaire" >
-          <h3>CREAT A NEW ACCOUNT </h3>
-          <input type="text" name="username" id="username" value="" placeholder="Name">
+      </section>
+      <section class="box" >
+        <form action="#" method="post" class="formulaire" id="newaccount" >
+          <h2>CREAT ACCOUNT </h2>
+          <input type="text" name="username" id="name" value="" placeholder="Name">
           <input type="email" name="email" id="email" value="" placeholder="Email address">
-          <input type="password" name="password" id="password" value="" placeholder="Password(more than 10)">
+          <input type="password" name="password" id="newPassword" value="" placeholder="Password(more than 10)">
+          <span id="errorNewaccount"></span>
           <button type="submit"> Creat </button>
-          <span ></span>
+          
 
         </form>
 
-      </nav>
+      </section>
     </div>
     
   </body>

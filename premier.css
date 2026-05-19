@@ -4,7 +4,7 @@
     padding: 120px 60px;
 }
 .box{
-    flex: 0.5 1 1 250px;
+    flex: 1 1 250px;
     margin: 10px;
 }
 
@@ -19,9 +19,7 @@
     display: block;
     margin-bottom: 20px;
 }
-.formulaire h3{
-    box-shadow: 0.5px red;
-}
+
 a{
     display: block;
     color: white;
@@ -45,12 +43,13 @@ img{
 }
 @media screen and (max-width:750px) {
     .contenaire{
-        font-family: 'Times New Roman', Times, sans-serif;
+        display: grid;
+        grid-template-rows: min-content;
 
     }
     img{
-        width: 150px;
-        height: 190px;
+        width: 100px;
+        height: 120px;
     }
     
 }
@@ -59,17 +58,19 @@ img{
         font-size: small;
         padding: 0px;
         margin: 0px;
+        display: grid;
+        grid-template-rows: 1fr;
        
     }
     .formulaire{
-        width: 100%;
+        
         padding: 0px;
         margin: 0px;
     }
    
     img{
-        width: 100px;
-        height: 130px;
+        width: 50px;
+        height: 70px;
     }
 }
 

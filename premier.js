@@ -1,41 +1,48 @@
 "use strict"
-/*
-console.log("hi consol");
-let formulaire = document.getElementById("formulaire");
-//formulaire.style.display="none";
-document.getElementById("formulaire").addEventListener("submit",Depart);
+
+console.log("Hi console");
+let login = document.getElementById("login");
+let newAccount = document.getElementById("newaccount");
+login.style.display="none";
+newAccount.style.display="none";
+
+let userID = document.getElementById("username");
+let passwordId = document.getElementById("password");
+
+let userNameID = document.getElementById("name");
+let newPasswordId = document.getElementById("newPassword")
+let userError = document.getElementById("errorLogin");
+
+document.querySelector("#login").addEventListener("submit",Depart);
 function Depart(event){
     event.preventDefault();
-    let nameValue = document.getElementById("username").value;
-    let passValue = document.getElementById("password").value;
-    let error = document.getElementById("error");
-    if(nameValue =="" || passValue ==""){
-        error.textContent="";
-        let p = document.createElement("p");
-        p.textContent="Le champ est vide";
-        p.style.color = "red";
-        error.appendChild(p);
+    let nameValue = userID.value;
+    let passValue = passwordId.value;
+    if(nameValue ==""  || passValue ===""){
+        userError.textContent="";
+        userError.textContent="Le champ est vide";
+        userError.style.color = "red";
+        
         return 
     }
-    else{
-        error.textContent="";
+    else {
+        userError.textContent="";
+        
     }
+    
 }
 
 let image = document.getElementById("image");
 image.addEventListener("click",Allumer);
 function Allumer(event){
     let img= event.currentTarget;
-    //console.log(img.src);
     let source = img.getAttribute("src")
     if(source == "image/1.jpeg"){
-        //document.getElementById("login").style.display="none";
         document.body.style.backgroundColor="black";
         img.setAttribute("src","image/2.jpeg");
-        console.log("2.jpeg ==", img.getAttribute("src"));
         img.style.filter="invert(1)";
-        formulaire.style.display="block";
-        document.querySelector("#formulaire h3").style.color="white";
+        login.style.display="block";
+        document.querySelector("h3").style.color="white";
         
     }
     else{
@@ -43,9 +50,36 @@ function Allumer(event){
         img.setAttribute("src","image/1.jpeg");
         console.log("1.jepg == ",  img.getAttribute("src"));
         img.style.filter="invert(0)";
-        formulaire.style.display="none";
+        login.style.display="none";
+        document.getElementById("newaccount").style.display="none";
 
     }
+    document.getElementById("creat").addEventListener("click",creatAccount);
 
 }
-    */
+document.getElementById("newaccount").addEventListener("submit",function(event){
+    event.preventDefault();
+    let newNameValue = userNameID.value;
+    let newPasswordValue = newPasswordId.value;
+    let newAccountError = document.getElementById("errorNewaccount");
+    if(newNameValue ==="" || newPasswordValue ===""){
+        newAccountError.textContent="";
+        newAccountError.textContent="Le champ est vide!";
+        newAccountError.style.color = "red";
+        return 
+    }
+    else{
+        newAccountError.textContent="";
+    }
+});
+
+const creatAccount =(event)=>{
+    
+    console.log(event.currentTarget);
+    newAccount.style.display="block";
+    document.body.style.backgroundColor="none";
+    document.querySelector("h2").style.color="white";
+    
+    
+}
+    
