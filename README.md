@@ -31,12 +31,12 @@ L'utilisateur peut aussi ouvrir un formulaire de création de compte.
 
 ---
 
-## 📂 Structure du projet
+##  Structure du projet
 
 ```bash
 📁 projet-login/
 │
-├── premier.html
+├── index.html
 ├── premier.css
 ├── premier.js
 └── 📁 image/
@@ -70,7 +70,7 @@ L'utilisateur peut aussi ouvrir un formulaire de création de compte.
 
 1. Télécharger le projet
 2. Ouvrir le dossier
-3. Double-cliquer sur `premier.html`
+3. Double-cliquer sur `index.html`
 
 Ou utiliser VS Code avec **Live Server**.
 
